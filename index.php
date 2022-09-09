@@ -1,6 +1,8 @@
 <?php
     echo "Hello Geonovation!";
-    echo "<img src="Images/download.PNG">";//This should echo my image
+    $content = file_get_contents('Images/download.png');
+    header('Content-Type: image/gif');
+    echo $content;
 
 
 ?>
